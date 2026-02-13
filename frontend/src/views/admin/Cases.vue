@@ -173,42 +173,48 @@
         <!-- IELTS -->
         <el-divider content-position="left">IELTS 雅思</el-divider>
         <el-row :gutter="16">
-          <el-col :span="4"><el-form-item label="总分"><el-input-number v-model="form.ielts_overall" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="4"><el-form-item label="听力"><el-input-number v-model="form.ielts_listening" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="4"><el-form-item label="阅读"><el-input-number v-model="form.ielts_reading" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="4"><el-form-item label="写作"><el-input-number v-model="form.ielts_writing" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="4"><el-form-item label="口语"><el-input-number v-model="form.ielts_speaking" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="总分"><el-input-number v-model="form.ielts_overall" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="听力"><el-input-number v-model="form.ielts_listening" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="阅读"><el-input-number v-model="form.ielts_reading" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
+        </el-row>
+        <el-row :gutter="16">
+          <el-col :span="8"><el-form-item label="写作"><el-input-number v-model="form.ielts_writing" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="口语"><el-input-number v-model="form.ielts_speaking" :min="0" :max="9" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
         </el-row>
 
         <!-- TOEFL -->
         <el-divider content-position="left">TOEFL 托福</el-divider>
         <el-row :gutter="16">
-          <el-col :span="4"><el-form-item label="总分"><el-input-number v-model="form.toefl_total" :min="0" :max="120" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="4"><el-form-item label="阅读"><el-input-number v-model="form.toefl_reading" :min="0" :max="30" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="4"><el-form-item label="听力"><el-input-number v-model="form.toefl_listening" :min="0" :max="30" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="4"><el-form-item label="口语"><el-input-number v-model="form.toefl_speaking" :min="0" :max="30" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="4"><el-form-item label="写作"><el-input-number v-model="form.toefl_writing" :min="0" :max="30" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="总分"><el-input-number v-model="form.toefl_total" :min="0" :max="120" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="阅读"><el-input-number v-model="form.toefl_reading" :min="0" :max="30" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="听力"><el-input-number v-model="form.toefl_listening" :min="0" :max="30" style="width:100%" /></el-form-item></el-col>
+        </el-row>
+        <el-row :gutter="16">
+          <el-col :span="8"><el-form-item label="口语"><el-input-number v-model="form.toefl_speaking" :min="0" :max="30" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="写作"><el-input-number v-model="form.toefl_writing" :min="0" :max="30" style="width:100%" /></el-form-item></el-col>
         </el-row>
 
         <!-- GRE / GMAT -->
         <el-divider content-position="left">GRE / GMAT</el-divider>
         <el-row :gutter="16">
-          <el-col :span="6"><el-form-item label="GRE总分"><el-input-number v-model="form.gre_total" :min="260" :max="340" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="6"><el-form-item label="Verbal"><el-input-number v-model="form.gre_verbal" :min="130" :max="170" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="6"><el-form-item label="Quant"><el-input-number v-model="form.gre_quant" :min="130" :max="170" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="6"><el-form-item label="Writing"><el-input-number v-model="form.gre_writing" :min="0" :max="6" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="GRE总分"><el-input-number v-model="form.gre_total" :min="260" :max="340" controls-position="right" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="Verbal"><el-input-number v-model="form.gre_verbal" :min="130" :max="170" controls-position="right" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="Quant"><el-input-number v-model="form.gre_quant" :min="130" :max="170" controls-position="right" style="width:100%" /></el-form-item></el-col>
         </el-row>
         <el-row :gutter="16">
-          <el-col :span="6"><el-form-item label="GMAT"><el-input-number v-model="form.gmat_total" :min="200" :max="800" :step="10" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="Writing"><el-input-number v-model="form.gre_writing" :min="0" :max="6" :step="0.5" :precision="1" controls-position="right" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="GMAT"><el-input-number v-model="form.gmat_total" :min="200" :max="800" :step="10" controls-position="right" style="width:100%" /></el-form-item></el-col>
         </el-row>
 
         <!-- 软背景 -->
         <el-divider content-position="left">软背景</el-divider>
         <el-row :gutter="16">
-          <el-col :span="6"><el-form-item label="实习段数"><el-input-number v-model="form.internship_count" :min="0" :max="10" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="6"><el-form-item label="科研段数"><el-input-number v-model="form.research_count" :min="0" :max="10" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="6"><el-form-item label="论文篇数"><el-input-number v-model="form.publication_count" :min="0" :max="20" style="width:100%" /></el-form-item></el-col>
-          <el-col :span="6"><el-form-item label="工作年限"><el-input-number v-model="form.work_years" :min="0" :max="20" :step="0.5" :precision="1" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="实习段数"><el-input-number v-model="form.internship_count" :min="0" :max="10" controls-position="right" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="科研段数"><el-input-number v-model="form.research_count" :min="0" :max="10" controls-position="right" style="width:100%" /></el-form-item></el-col>
+          <el-col :span="8"><el-form-item label="论文篇数"><el-input-number v-model="form.publication_count" :min="0" :max="20" controls-position="right" style="width:100%" /></el-form-item></el-col>
+        </el-row>
+        <el-row :gutter="16">
+          <el-col :span="8"><el-form-item label="工作年限"><el-input-number v-model="form.work_years" :min="0" :max="20" :step="0.5" :precision="1" controls-position="right" style="width:100%" /></el-form-item></el-col>
         </el-row>
         <el-row :gutter="16">
           <el-col :span="12"><el-form-item label="实习详情"><el-input v-model="form.internship_experience" type="textarea" :rows="2" /></el-form-item></el-col>
@@ -237,7 +243,7 @@
         <!-- 录取结果 -->
         <el-divider content-position="left">录取结果</el-divider>
         <el-row :gutter="16">
-          <el-col :span="8">
+          <el-col :span="12">
             <el-form-item label="录取院校" required>
               <el-select
                 v-model="form.admitted_university_id"
@@ -249,7 +255,7 @@
               </el-select>
             </el-form-item>
           </el-col>
-          <el-col :span="8">
+          <el-col :span="12">
             <el-form-item label="录取专业" required>
               <el-select
                 v-model="form.admitted_major_id"
@@ -260,7 +266,9 @@
               </el-select>
             </el-form-item>
           </el-col>
-          <el-col :span="4">
+        </el-row>
+        <el-row :gutter="16">
+          <el-col :span="6">
             <el-form-item label="结果">
               <el-select v-model="form.result" style="width:100%">
                 <el-option label="录取" value="录取" />
@@ -270,13 +278,11 @@
               </el-select>
             </el-form-item>
           </el-col>
-          <el-col :span="4">
+          <el-col :span="8">
             <el-form-item label="年份">
-              <el-input-number v-model="form.admission_year" :min="2020" :max="2030" style="width:100%" />
+              <el-input-number v-model="form.admission_year" :min="2020" :max="2030" controls-position="right" style="width:100%" />
             </el-form-item>
           </el-col>
-        </el-row>
-        <el-row :gutter="16">
           <el-col :span="6">
             <el-form-item label="学期">
               <el-select v-model="form.admission_semester" style="width:100%">
@@ -285,7 +291,9 @@
               </el-select>
             </el-form-item>
           </el-col>
-          <el-col :span="10">
+        </el-row>
+        <el-row :gutter="16">
+          <el-col :span="12">
             <el-form-item label="奖学金">
               <el-input v-model="form.scholarship" placeholder="如：全额奖学金" />
             </el-form-item>
