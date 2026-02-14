@@ -84,6 +84,12 @@ python -m venv venv
 # macOS/Linux: source venv/bin/activate
 pip install -r requirements.txt
 
+# 配置环境变量（首次运行必须执行）
+# 复制 .env.example 为 .env，默认使用 SQLite，无需额外安装数据库
+cp .env.example .env          # macOS/Linux
+copy .env.example .env         # Windows
+# 如需使用 MySQL，编辑 .env 文件切换 DATABASE_URL 即可
+
 # 初始化数据库（首次运行必须执行，会创建 SQLite 数据库并写入初始数据）
 python init_data.py
 

@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     APP_NAME: str = "xmum留学"
     DEBUG: bool = True
     
-    DATABASE_URL: str = "mysql+pymysql://root:password@localhost:3306/master_application"
+    DATABASE_URL: str = "sqlite:///./master_application.db"
     
     SECRET_KEY: str = "your-super-secret-key-change-this-in-production"
     ALGORITHM: str = "HS256"
